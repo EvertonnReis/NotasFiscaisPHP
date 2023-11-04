@@ -1,5 +1,5 @@
 <?php
-include 'config.php';
+include '../includes/config.php';
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
@@ -22,7 +22,7 @@ if (isset($_GET['id'])) {
     <title>Excluir Cliente</title>
 </head>
 <body>
-    <?php include('navbar.php'); ?>
+    <?php include('../includes/navbar.php'); ?>
 
     <div class="container">
         <h1>Excluir Cliente</h1>

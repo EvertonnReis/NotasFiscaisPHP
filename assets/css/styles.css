@@ -1,0 +1,12 @@
+.botao-listar{
+    margin-left: 10px;
+}
+.botao-criar-cliente,
+.botao-adicionar-venda,
+.botao-adicionar-cliente,
+.botao-salvar-cliente,
+.botao-inserir-venda
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

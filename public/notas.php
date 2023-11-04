@@ -1,5 +1,5 @@
 <?php
-include 'config.php';
+include '../includes/config.php';
 
 if (isset($_GET['id_cliente'])) {
     $id_cliente = $_GET['id_cliente'];
@@ -31,7 +31,7 @@ if (isset($_GET['id_cliente'])) {
             <title>Listar Notas do Cliente</title>
         </head>
         <body>
-            <?php include('navbar.php'); ?>
+            <?php include('../includes/navbar.php'); ?>
 
             <div class="container"> 
                 <h2>Informações do Cliente</h2>

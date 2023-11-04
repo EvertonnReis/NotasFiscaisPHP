@@ -1,5 +1,5 @@
 <?php
-include 'config.php';
+include '../includes/config.php';
 
 $sql = "SELECT v.id, c.nome AS cliente, v.valor_nota, v.numero_nota, v.data_emissao FROM vendas v
         INNER JOIN clientes c ON v.id_cliente = c.id";
@@ -12,15 +12,16 @@ $result = $conn->query($sql);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets//css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Listar Vendas</title>
 </head>
 <body>
-    <?php include('navbar.php'); ?>
+    <?php include('../includes/navbar.php'); ?>
 
     <div class="container">
         <h1>Listar Vendas</h1>
-        <a href="vendas.php?" class="btn btn-primary">Adicionar Venda</a>
+        <a href="vendas.php?" class="btn btn-primary botao-adicionar-venda">Adicionar Venda</a>
         <table class="table">
             <thead>
                 <tr>

@@ -1,5 +1,5 @@
 <?php
-include 'config.php';
+include '../includes/config.php';
 
 $sql = "SELECT id, nome, email FROM clientes";
 $result = $conn->query($sql);
@@ -12,16 +12,17 @@ $result = $conn->query($sql);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets//css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Listar Clientes</title>
 </head>
 
 <body>
-    <?php include('navbar.php'); ?>
+    <?php include('../includes/navbar.php'); ?>
 
     <div class="container">
         <h1>Listar Clientes</h1>
-        <a href="./adicionar_cliente.php" class="btn btn-primary">
+        <a href="./adicionar_cliente.php" class="btn btn-primary botao-criar-cliente">
             Criar Cliente <i class="bi bi-list"></i>
         </a>
         <table class="table">
@@ -44,8 +45,8 @@ $result = $conn->query($sql);
 
                         echo "<td>";
                         echo '<a href="editar_cliente.php?id=' . $row["id"] . '" class="btn btn-warning">Editar</a>';
-                        echo '<a href="excluir_cliente.php?id=' . $row["id"] . '" class="btn btn-danger ml-2">Excluir</a>';
-                        echo "<a href='notas.php?id_cliente=" . $row['id'] . "' class='btn btn-primary'>Listar Notas</a>";
+                        echo '<a href="excluir_cliente.php?id=' . $row["id"] . '" class="btn btn-danger botao-listar">Excluir</a>';
+                        echo '<a href="notas.php?id_cliente=' . $row['id'] . '" class="btn btn-primary botao-listar">Listar Notas</a>';
                         echo "</td>";
                         
                         echo "</tr>";
