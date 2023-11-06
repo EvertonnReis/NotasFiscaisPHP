@@ -46,7 +46,7 @@ $result = $conn->query($sql);
                         echo "<td>";
                         echo '<a href="editar_cliente.php?id=' . $row["id"] . '" class="btn btn-warning">Editar</a>';
                         echo '<a href="excluir_cliente.php?id=' . $row["id"] . '" class="btn btn-danger botao-listar">Excluir</a>';
-                        echo '<a href="notas.php?id_cliente=' . $row['id'] . '" class="btn btn-primary botao-listar">Listar Notas</a>';
+                        echo '<a href="../vendas/listar_vendas.php?id_cliente=' . $row['id'] . '" class="btn btn-primary botao-listar">Listar Notas</a>';
                         echo "</td>";
                         
                         echo "</tr>";

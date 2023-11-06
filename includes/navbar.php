@@ -6,10 +6,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+                <a class="nav-link active" aria-current="page" href="../public/index.php">Home</a>
                 <a class="nav-link" href="../clientes/clientes.php">Clientes</a>
                 <a class="nav-link" href="../vendas/listar_vendas.php">Vendas</a>
-                <a class="nav-link" href="../public/notas.php">Notas</a>
+                <a class="nav-link" href="../clientes/listar_clientes.php">Notas</a>
             </div>
         </div>
     </div>
